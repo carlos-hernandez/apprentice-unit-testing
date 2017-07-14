@@ -1,0 +1,24 @@
+# Gradle output files and dirs.
+.gradle/
+build/
+classes/
+generated/
+target/
+out/
+
+# IntelliJ IDEA configuration files.
+.idea/
+*.iml
+*.ipr
+*.iws
+atlassian*.xml
+
+# Eclipse configuration files.
+.classpath
+.project
+.settings/
+bin/
+
+# Logs generated in the test phase.
+**/logs/
+*.log
