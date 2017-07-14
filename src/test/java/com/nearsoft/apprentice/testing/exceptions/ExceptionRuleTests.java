@@ -1,11 +1,11 @@
 package com.nearsoft.apprentice.testing.exceptions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ExceptionRuleTests {
 
@@ -17,7 +17,7 @@ public class ExceptionRuleTests {
         thrown.expect(IndexOutOfBoundsException.class);
         thrown.expectMessage("Index: 0, Size: 0");
 
-        List<Object> list = new ArrayList<>();
+        List<Object> list = new ArrayList<Object>();
         list.get(0); // execution will never get past this line
     }
 }

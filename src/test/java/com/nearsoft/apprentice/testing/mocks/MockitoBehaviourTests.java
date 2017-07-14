@@ -24,7 +24,7 @@ public class MockitoBehaviourTests {
     private List<String> mockedList;
 
     @Spy
-    private List<String> spyList = new ArrayList<>();
+    private List<String> spyList = new ArrayList<String>();
 
     @Test
     public void configureSimpleReturnBehaviorForMock() {

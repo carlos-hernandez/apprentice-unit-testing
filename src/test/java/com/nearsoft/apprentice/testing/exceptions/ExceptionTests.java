@@ -12,13 +12,13 @@ public class ExceptionTests {
 
     @Test(expected = IndexOutOfBoundsException.class)
     public void expectingExceptionWithAnnotation() {
-        new ArrayList<>().get(0);
+        new ArrayList<String>().get(0);
     }
 
     @Test
     public void oldSchoolExceptionTesting() {
         try {
-            new ArrayList<>().get(0);
+            new ArrayList<String>().get(0);
             fail("Expected an IndexOutOfBoundsException to be thrown");
         } catch (IndexOutOfBoundsException exception) {
             assertThat(exception.getMessage(), is("Index: 0, Size: 0"));
